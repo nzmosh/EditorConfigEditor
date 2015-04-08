@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EditorConfig Editor</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/monokai_sublime.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>EditorConfig Editor</h1>
+    <div class="output">
+      <pre><code id="output" class="makefile"></code></pre>
+    </div>
+    <form action="#" id="input">
+      <div class="root"><label><input type="checkbox" id="root" checked> 上位ディレクトリの.editorconfigを探索しない</label></div>
+      <table class="block">
+        <tfoot>
+          <tr>
+            <td colspan="2"><a href="#remove">このルールを削除</a></td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <th>対象ファイル</th>
+            <td><input type="text" id="rule-0-target" value="*"></td>
+          </tr>
+          <tr>
+            <th>文字コード</th>
+            <td>
+              <select id="rule-0-charset">
+                <option value="">指定しない</option>
+                <option value="utf-8">UTF-8</option>
+                <option value="Shift_JIS">Shift_JIS</option>
+                <option value="EUC-JP">EUC-JP</option>
+                <option value="ISO-2022-JP">ISO-2022-JP</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>インデントスタイル</th>
+            <td>
+              <select id="rule-0-indent_style">
+                <option value="">指定しない</option>
+                <option value="space">スペース</option>
+                <option value="tab">タブ</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>インデント幅</th>
+            <td>
+              <input type="text" id="rule-0-indent_size">
+            </td>
+          </tr>
+          <tr>
+            <th>タブ幅</th>
+            <td>
+              <input type="text" id="rule-0-tab_width">
+            </td>
+          </tr>
+          <tr>
+            <th>改行コード</th>
+            <td>
+              <select id="rule-0-end_of_line">
+                <option value="">指定しない</option>
+                <option value="lf">LF - UNIX</option>
+                <option value="cr">CR - Mac</option>
+                <option value="crlf">CRLF - DOS</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>ファイル末尾の改行</th>
+            <td>
+              <select id="rule-0-insert_final_newline">
+                <option value="">指定しない</option>
+                <option value="true">あり</option>
+                <option value="false">なし</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="add"><a href="#add">ルールを追加</a></div>
+    </form>
+  </div>
+</body>
+</html>

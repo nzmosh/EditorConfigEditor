@@ -1,0 +1,86 @@
+@charset 'utf-8';
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #e2e2e2;
+  line-height: 1.8;
+  padding: 3em;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.output {
+  float: left;
+  font-size: 14px;
+}
+
+.output pre {
+  margin: 0;
+}
+
+#output {
+  width: 32em;
+}
+
+#input {
+  padding-left: 1em;
+  overflow: hidden;
+}
+
+.root {
+  background: #fff;
+  padding: .5em 1em;
+}
+
+.block {
+  width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.block th,
+.block td {
+  padding: .5em 1em;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.block tr:last-child th,
+.block tr:last-child td {
+  border-bottom: none;
+}
+
+.block input[type="text"] {
+  padding: .25em .5em;
+  border: none;
+  background: #f8f8f8;
+}
+
+.block tfoot td {
+  padding: 0;
+  background: transparent;
+  text-align: right;
+  font-size: 11px;
+}
+
+.block tfoot td a {
+  color: #999;
+  text-decoration: none;
+}
+
+.add a {
+  display: block;
+  padding: .5em 1em;
+  text-align: center;
+  background: #eee;
+}
+
+.add a:hover {
+  background: #fff;
+}
